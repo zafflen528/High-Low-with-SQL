@@ -51,7 +51,6 @@ def show_leaderboard(name):
             inleaderboard = False
 
 def add_score(score,name):
-    #SQLIfy.insert_to_user(0,name)
     SQLIfy.insert_to_user(score,name)
 
 def playHL(name):

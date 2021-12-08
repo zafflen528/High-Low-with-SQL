@@ -27,9 +27,7 @@ def user_exist(name:str):
     return False
 
 def insert_to_user(score:int,name:str):
-    # TODO
-    # find out how to handle an empty set of data
-    existing_user_query = "UPDATE user SET score=score+? WHERE username=?" # it's a test, don't insert yet
+    existing_user_query = "UPDATE user SET score=score+? WHERE username=?"
     new_user_query = "INSERT INTO user(username, score) VALUES(?,?)"
 
     if user_exist(name):
